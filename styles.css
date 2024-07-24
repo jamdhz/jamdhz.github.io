@@ -27,7 +27,7 @@ header {
 }
 
 .main-container {
-    display: flex;
+    /* display: flex; */
     align-items: flex-start;
     margin-top: 60px;
     width: 100%;
@@ -60,6 +60,12 @@ header {
     width: 800px;
     height: 800px;
     top:100px
+}
+@media(max-width:768px) {
+    .container{
+        width: 600px;
+        height: 600px;
+    }
 }
 
 .container img {
@@ -126,6 +132,11 @@ img.clickablebutton {
     transform-origin: center center;
     font-size: 33px;
 }
+@media(max-width:768px){
+    .Rewards p {
+        font-size: 25px;
+    }
+}
 
 .Rewards p:nth-child(1) { transform: rotate(90deg) translateY(0px) translateX(-160px); }
 .Rewards p:nth-child(2) { transform: rotate(135deg) translateY(0px) translateX(-160px); }
@@ -136,3 +147,15 @@ img.clickablebutton {
 .Rewards p:nth-child(7) { transform: rotate(315deg) translateY(0px) translateX(-160px); }
 .Rewards p:nth-child(8) { transform: rotate(0deg) translateY(0px) translateX(-160px); }
 .Rewards p:nth-child(9) { transform: rotate(45deg) translateY(0px) translateX(-160px); }
+
+@media(max-width:768px) {
+    .Rewards p:nth-child(1) { transform: rotate(90deg) translateY(0px) translateX(-120px); }
+    .Rewards p:nth-child(2) { transform: rotate(135deg) translateY(0px) translateX(-120px); }
+    .Rewards p:nth-child(3) { transform: rotate(180deg) translateY(0px) translateX(-120px); }
+    .Rewards p:nth-child(4) { transform: rotate(225deg) translateY(0px) translateX(-120px); }
+    .Rewards p:nth-child(5) { transform: rotate(253deg) translateY(0px) translateX(-120px); }
+    .Rewards p:nth-child(6) { transform: rotate(277.5deg) translateY(0px) translateX(-120px); }
+    .Rewards p:nth-child(7) { transform: rotate(315deg) translateY(0px) translateX(-120px); }
+    .Rewards p:nth-child(8) { transform: rotate(0deg) translateY(0px) translateX(-120px); }
+    .Rewards p:nth-child(9) { transform: rotate(45deg) translateY(0px) translateX(-120px); }
+}
